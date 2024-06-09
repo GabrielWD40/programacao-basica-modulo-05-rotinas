@@ -1,0 +1,33 @@
+Nessa aula nós vamos falar sobre "PASSAGEM DE PARÂMETROS POR VALOR"
+
+A SINTAXE DE UMA FUNÇÃO É A SEGUINTE 
+
+FUNÇÃO NOME_DA_FUNCAO (PARÂMETRO, SE HOUVER){
+	EXECUÇÃO DE CÓDIGO
+}
+
+
+
+	funcao dobra (inteiro num) → Chamamos isso aqui de PARÂMETRO FORMAL{
+		inteiro d
+		d = num * 2
+		escreva(d)	
+	}
+
+	funcao inicio(){
+	
+		inteiro n = 7
+		dobra(n) → Isso aqui é chamado de PARÂMETRO REAL (é aquilo que vai ser passado, é o valor que será enviado à função)
+		escreva(n)
+
+	}
+
+
+	O resultado desse programa será: 14 7
+
+Isso porque:
+
+	Na PASSAGEM POR VALOR, o conteúdo do PARÂMETRO REAL é copiado para o PARÂMETRO FORMAL.
+	Qualquer mudança no valor do formal NÃO AFETA o valor do real.
+
+	(Veja os exemplos no portugol studio que eu preparei para você;)

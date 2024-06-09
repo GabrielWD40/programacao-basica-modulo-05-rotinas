@@ -1,0 +1,36 @@
+
+   Nesse vídeo nós vamos falar do tipos de rotinas:
+	
+   	O que são rotinas em programação?
+		É uma AÇÃO que acontece periodicamente, sempre que ocorre um evento DISPARADOR. 
+		Em alguns casos, PARÂMETROS são recebidos e afetam na execução da rotina. 
+		Terminada a ação, o fluxo de execução volta ao ponto em que estava no momento do disparo.
+
+
+	Resumindo, é sempre uma coisa que sempre acontece quando há um evento disparador. Alguma coisa que dispara sempre aquela ação.
+Diferentemento dos laços, as rotinas não acontecem sempre, elas tendem a acontecer de novo quando finalizadas mas não necessariamente ficam que nem os laços, se repetindo eternamente após o fim do laço.
+
+---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+Exemplo 1 de rotina sem retorno do professor Gustavo:
+
+	Um pai, todo fim de semana dá dinheiro ao seu filho para que ele vá na vendinha da esquina e compre o que quiser, sem dar satisfação;
+
+	Nesse caso, temos uma rotina, que sempre acontece quando o pai dá dinheiro ao filho. Podemos dizer que:
+
+	Pai: é o evento disparador, pois tudo só acontece quando ele dá dinheiro ao filho.
+	Dinheiro: É o parâmetro, uma vez que quanto maior a quantia, mais coisas o filho pode comprar.
+	Filho: É a ação, é ação feita toda vez que há esse disparo de rotina, mas o filho não precisa dar retorno / satisfação do que comprou, então temos aí uma rotina sem retorno.
+
+---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+Exemplo de rotina com retorno do professor Gustavo:
+	
+	Um pai, todo fim de semana dá dinheiro ao seu filho para que ele vá na vendinha da esquina e compre um refrigerante;
+
+	Como isso é constante, torna-se uma rotina. E com base no exemplo de aula podemos dizer que:
+
+	Pai: É o evento disparador, é sempre ppor conta dele que há a ação de comprar o refrigerante.
+	Dinheiro e pedido do refri: São os parâmetros passado para o filho, ou seja, ele tem o dinheiro para comprar um refri.
+	Filho: É a ação de realizar o que foi pedido com base nos parâmetros passados.
+	Retorno: É a satisfação que o filho dá ao pai depois de realizar a ação de compra, de ter executado a rotina é o valor de retorno a função de rotina;

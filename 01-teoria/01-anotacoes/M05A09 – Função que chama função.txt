@@ -1,0 +1,3 @@
+Nessa aula vamos falar sobre Função que chama função.
+
+Você pode chamar uma função dentro de outra função, sem problemas.

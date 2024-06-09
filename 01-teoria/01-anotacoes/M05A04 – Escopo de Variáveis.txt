@@ -1,0 +1,39 @@
+Escopo de variáveis é a área onde a variável vai funcionar. 
+Basicamente é quando você cria uma variável dentro de um método, aquela variável só vai funcionar dentro daquele método. Chamamos isso de VARIÁVEL LOCAL!
+Esses locias, no caso, as funções, são locais e momentos diferentes. A variável 1 só pode ser usada no método 1, ela não pode ser inicializada nas outras funções.
+Essas variável pertecem aquela rotina, exclusivamente. Fora desse escopo, ela não vai funcionar. Por isso o nome de ESCOPO LOCAL, pertencente a rotina 1.
+
+
+Uma coisa importante ressaltada na aula são os parâmetros. Os parâmetros de uma função são como variáveis de escopo locais dessa função. Eles só vão funcionar no método a qual pertencem.
+Exemplo:
+
+     ____________________________
+    |				|
+    |	metodo1(){		|
+    | 				|
+    |		variável 1 --------> Variável local
+    |				|
+    | 	}			|		
+    |___________________________|
+
+     ____________________________
+    |				|
+    |	metodo2(){		|
+    | 				|
+    |		variável 2 --------> Variável local
+    |				|
+    | 	}			|		
+    |___________________________|
+
+     ____________________________
+    |				|
+    |	metodo3(){		|
+    | 				|
+    |		variável 3 --------> Variável local
+    |				|
+    | 	}			|		
+    |___________________________|
+
+
+
+Mas, se você quiser declarar uma variável que irá funcionar no programa todo, você terá de declarar ela fora de qualquer função. Chamamos isso de VARIÁVEL GLOBAL!

@@ -1,0 +1,46 @@
+Bom, nessa aula nós aprendemos alguns truques para simplificar o nosso código. Isso inclui algumas coisas bem simples como:
+
+	→ Se vc não vai precisar armazenar o valor da função retornada, não precisa criar uma variável para armazenar esse valor. 
+
+
+Outra vantagem é não precisar de uma linha específica para a chamada de uma função, você pode chamar ela a hora que você quiser.
+Exemplo da aula: 
+
+programa
+{
+	
+	//função que calcula se par ou é ímpar:
+	funcao cadeia par_ou_impar (inteiro numero_analisado){
+		
+		//verificando se um número é par ou ímpar:
+		se(numero_analisado % 2 == 0){
+			retorne "PAR" // aqui não criamos variável, nem nada. Só pedimos para retornar a string 'PAR'
+		}senao{
+			retorne "ÍMPAR" // aqui não criamos variável, nem nada. Só pedimos para retornar a string 'ÍMPAR'
+		}
+
+		/*NOTA DE SIMPLIFICAÇÃO: 
+			Repare que nó código anterior nós tinhamos duas variáveis aqui nesse escopo, agora não há mais necessidade,
+			nós só precisamos da variável que recebe o parâmetro de chamada de função. Depois de analisar, retornamos um
+			valor em string, que será usado nas linhass abaixo:*/
+	}
+
+	
+	funcao vazio inicio()
+	{	
+		//declaração das variáveis que vamos utilizar nesse escopo:
+		inteiro numero_digitado = 0 
+			
+		escreva("\n\nDigite um número inteiro: ")
+		leia(numero_digitado)
+		
+		//chamada de função com retorno de valores:
+		//apresentação do resultado da função:
+		escreva("\nO número " + numero_digitado + " é " + par_ou_impar(numero_digitado) + "!\n\n")
+
+		/*NOTA DE SIMPLIFICAÇÃO: 
+			Veja que aqui nós não precisamos armazenar nenhum valor e devido a isso, não há necessidad de criar uma
+			variável que faça isso. Ao invés disso, nós chamamos a função e ela retorna o valor de acordo com as con-
+			dições dela lá em cima.  :*/
+	}
+}

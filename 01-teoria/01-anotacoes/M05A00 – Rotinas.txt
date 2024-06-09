@@ -1,0 +1,13 @@
+Nesse módulo nós vamos falar sobre rotinas em programação. 
+
+Existem dois tipos de rotinas em linguagem de programação:
+	
+	→ ROTINA SEM RETORNO: PROCEDIMENTO
+		(a programação orientada a objetos chama isso de MÉTODO)
+
+
+	→ ROTINA COM RETORNO: FUNÇÕES
+		(Também são métodos, só que com valores.)
+
+
+Outra palavra muito usada é módulo, ou modularização.

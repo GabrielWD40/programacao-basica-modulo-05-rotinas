@@ -1,0 +1,62 @@
+Nessa aula vamos falar das rotinas sem retorno.
+
+Lembrete: Sem disparo, não há função executada.
+
+Se você reparar, no portugol studio há a função início (que é sem retorno), que executa o código e o computador continua fazendo o que estava fazendo antes de executar o programa.
+
+No exemplo da aula, o professor deu um exemplo muito legal de como funcionam as funções, como a função início:
+Ela só acontece porque há um evento disparador, que nesse caso, é o botão do play, que roda o programa.
+
+
+Então ele colocou mais um exemplo: Suponha que você está no portugol studio e rode o programa, qual dessas duas funções irá rodar?
+
+
+funcao teste (){
+	comando A
+	comando B
+	comando C
+}
+
+funcao inicio (){
+	comando 1
+
+	comando 2
+}
+
+
+A resposta certa é que as funções serão executadas se e somente se, houver um disparador. Nesse caso, só a função início será executada porque há o evento disparador dela.
+Já na função teste, não encontramos isso.
+
+
+Se lembra que em java também começa assim, aquele "void" é de vazio, que siginifica que é uma função sem retorno.
+Em linguagens como java, kotlin e c, o programa sempre procurará a função main.
+
+
+E como fazemos para chamar uma função dentro de outra? 
+
+
+	programa
+	{
+		//criação de outra função chamada de mercado
+		funcao mercado(){
+			escreva("comprar bala\n")
+			escreva("comprar refrigerante\n")
+			escreva("comprar pirulito\n")
+		}
+	
+		funcao inicio()
+		{
+			escreva("Jogando bola\n")
+			escreva("Tomando banho\n")
+		
+			//chamada da função mercado:
+			mercado()
+			
+			escreva("Jogando videogame\n")
+			escreva("Dormindo\n")	
+		}
+	}
+
+
+Para chamar a rotina colocamos o nome dela, ali em cima eu coloquei mercado(), porque ali é o disparador daquela rotina.
+Você pode chamar uma função quantas vezes você quiser.

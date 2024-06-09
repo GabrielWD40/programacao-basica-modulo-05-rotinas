@@ -1,0 +1,53 @@
+Nessa aula, nós vamos falar das rotinas que retornam valores. Chamamos elas de FUNÇÕES e as que não retornam valores são chamadas de PROCEDIMENTOS.
+
+
+
+A rotina com retorno de valores vai retornar um valor para o escopo principal.
+
+Sempre que voê tiver a palavra vazio, ou no caso do java, que "VOID", significa que é uma rotina sem retorno de valores.
+
+
+Exemplo: Funcao vazio exemplo (inteiro teste) {
+	escreva(teste * 2)
+	}
+
+_____________________________________________________________________________________________________________________________________________________________________________________________
+
+Mas o que muda do método de rotinas anterior?
+
+Simplesmente que aqui nós conseguimos retornar e armazenar o valor retornado. Com isso quero dizer que existira uma variável no escopo principal que armazenará os valores da função chamada anteriormente. A palavra que usaremos para exemplificar isso é RETURN.
+
+programa
+{
+	
+	//função que calcula se par ou é ímpar:
+	funcao cadeia par_ou_impar (inteiro numero_analisado){
+		//verificando se um número é par ou ímpar:
+		cadeia paridade_numero_analisado = "" //variável que guarda o valor da paridade do número analisado.
+		se(numero_analisado % 2 == 0){
+			paridade_numero_analisado = "PAR"				
+		}senao{
+			paridade_numero_analisado = "ÍMPAR"
+		}
+		retorne paridade_numero_analisado //Palavra que utilizamos para retornar o valor dessa função ao escopo principal.
+	}
+
+	
+	funcao vazio inicio()
+	{	
+		//declaração das variáveis que vamos utilizar nesse escopo:
+		inteiro numero_digitado = 0 
+		cadeia paridade_numero_digitado = ""
+
+	
+		escreva("\n\nDigite um número inteiro: ")
+		leia(numero_digitado)
+		
+		//chamada de função com retorno de valores:
+		//Para armazenar o valor, vc deve mandar uma variável guardar o valor retornado da função anterior. 
+		paridade_numero_digitado = par_ou_impar(numero_digitado)
+
+		//apresentação do resultado da função:
+		escreva("\nO número " + numero_digitado + " é " + paridade_numero_digitado + "!\n\n")
+	}
+}

@@ -1,0 +1,19 @@
+Vamos falar sobre recursividade: 
+	Pode ser chamda de recursão ou recorrência.
+
+Na recursividade a função vai chamar a si mesma, é diferente dos exemplos anteriores onde nós chamavamos uma função diferente. 
+Exemplo: Funcao1(funcao2(funcao3(parametro1, paramentro2)))
+
+Nas recursividades não fazemos isso, nós chamamos a própria função para fazer a resolução de um problema.
+
+O algoritmo recursivo precisa ter duas coisas: UM CASO BASE e UM CASO RECURSIVO
+	Caso base: Regra imutável, é uma regra e deve ser seguida.
+	Ex: qualquer número multipliaco por 0 é 0;
+		é uma regra que não vai mudar, e sempre será aquilo.
+
+	
+	CASO RECURSIVO da MULTIFIPLICAÇÃO:
+		Só funciona se o número for positivo, mas na regra geral é o seguinte: 
+		4 X 5 = 4 + 4 * (3 -1)
+		N * M = N + N * (M - 1) 
+	
